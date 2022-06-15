@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body{
+    font-family: 'Lexend Deca', sans-serif;
+    background-color: hsl(0, 0%, 95%);
+}
+
+h1,h2,h3{
+    color: hsl(0, 0%, 95%);
+    font-family: 'Big Shoulders Display', cursive;
+}
+
+p{
+    font-size: 15px;
+    color: hsla(0, 0%, 100%, 0.75);
+}
+
+/* ============== NAVBAR ========================== */
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+nav h1{
+    color: #00403f;
+    font-size: 2rem;
+}
+
+nav a{
+    padding: 0 .8rem;
+    color: #00403f;
+}
+
+
+/*============== FLEXBOX LAYOUT =================== */
+.flexbox__container{
+    display: flex;
+    flex: 1;
+    max-width: 800px;
+    margin: 6rem auto;
+    border-radius: 1rem;
+}
+
+.flexbox__container .flexbox__items{
+    height: 500px;
+    padding: 2rem;
+    line-height: 2;
+}
+
+.flexbox__container .flexbox__items:nth-child(1){
+    background-color: #e28525 ;
+    border-radius: .8rem 0 0 .8rem;
+}
+
+.flexbox__container .flexbox__items:nth-child(2){
+    background-color: #016972 ;
+}
+
+.flexbox__container .flexbox__items:nth-child(3){
+    background-color: #00403f;
+    border-radius: 0 .8rem .8rem 0;
+}
+
+.flexbox__container .flexbox__items .flexbox__items__content{
+    margin: auto;
+    padding-top: 2rem;
+    color: #fff;
+}
+
+.flexbox__items__content p{
+    margin-bottom: 5rem;
+}
+
+.flexbox__items__content a{
+    background-color: hsl(0, 0%, 95%);
+    padding: 12px 30px;
+    border-radius: 2rem;
+    align-items: center;
+}
+
+.flexbox__items__content a:hover{
+    background-color: transparent;
+    border: 1px solid hsl(0, 0%, 95%);
+}
+
+.flexbox__items__content a.first-btn{
+    color: #e28525;
+}
+
+.flexbox__items__content a.first-btn:hover{
+    color: #fff;
+}
+
+.flexbox__items__content a.second-btn{
+    color: #016972;
+}
+
+.flexbox__items__content a.second-btn:hover{
+    color: #fff;
+}
+
+.flexbox__items__content a.third-btn{
+    color: #00403f;
+}
+
+.flexbox__items__content a.third-btn:hover{
+    color: #fff;
+}
+
+
+/*============== MEDIA QUERIES =================== */
+@media (max-width: 768px){
+    .flexbox__container{
+        flex-direction: column;
+    }
+    .flexbox__container .flexbox__items{
+        height: auto;
+        width: 98%;
+        margin: auto;
+    }
+
+    .flexbox__container .flexbox__items:nth-child(1){
+        border-radius: .8rem .8rem 0 0;
+    }
+
+    .flexbox__container .flexbox__items:nth-child(3){
+        border-radius: 0 0 .8rem .8rem;
+    }
+}
