@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body{
+    background-color: hsl(0, 0%, 95%);
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+h1{
+    font-family: 'Big Shoulders Display', cursive;
+}
+
+/* ============== NAVBAR ========================== */
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+nav h1{
+    color: #00403f;
+    font-size: 2rem;
+}
+
+nav a{
+    padding: 0 .8rem;
+    color: #00403f;
+}
+
+/* ================ GRID LAYOUT ======================= */
+
+.grid__container{
+    max-width: 900px;
+    margin: 6rem auto;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    height: 600px;
+    padding: 1.6rem;
+    border-radius: 1rem;
+}
+
+.grid__container .first__row{
+    display: flex;
+}
+
+.grid__container .first__row .first__box{
+    width: 500px;
+    height: 250px;
+    background-color: #eb5020;
+    margin: .5rem;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+.grid__container .first__row .second__box{
+    background-color: #ffa401;
+    height: 248px;
+    width: 300px;
+    margin: .5rem;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+.grid__container .second__row{
+    display: flex;
+}
+
+.grid__container .second__row .first__box{
+    width: 350px;
+    background: #05aa42;
+    height: 250px;
+    margin: .5rem;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+.grid__container .second__row .second__row__column{
+    display: flex;
+    flex-direction: column;
+}
+
+.grid__container .second__row .second__row__column .box{
+    background-color: #01aefd;
+    width: 450px;
+    height: 118px;
+    margin: .5rem;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+
+
+@media screen and (max-width: 768px){
+    .grid__container{
+        width: fit-content;
+        flex: shrink;
+        height: auto;
+        padding: auto;
+        margin: 2rem auto;
+    }
+
+    .grid__container .first__row{
+        flex-direction: column;
+    }
+
+    .grid__container .first__row .first__box{
+        width: 100%;
+    }
+
+    .grid__container .second__row{
+        flex-direction: column;
+    }
+
+    .grid__container .second__row .first__box{
+        width: 100%;
+    }
+
+    .grid__container .second__row .second__row__column .box{
+        width:100%;
+    }
+}
