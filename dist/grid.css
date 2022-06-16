@@ -98,7 +98,7 @@ nav a{
         width: fit-content;
         flex: shrink;
         height: auto;
-        padding: 1.6rem;
+        padding: auto;
         margin: 2rem auto;
     }
 
@@ -106,7 +106,19 @@ nav a{
         flex-direction: column;
     }
 
+    .grid__container .first__row .first__box{
+        width: 100%;
+    }
+
     .grid__container .second__row{
         flex-direction: column;
+    }
+
+    .grid__container .second__row .first__box{
+        width: 100%;
+    }
+
+    .grid__container .second__row .second__row__column .box{
+        width:100%;
     }
 }

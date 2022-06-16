@@ -50,6 +50,7 @@ nav a{
     max-width: 800px;
     margin: 6rem auto;
     border-radius: 1rem;
+    overflow-y: hidden;
 }
 
 .flexbox__container .flexbox__items{
@@ -60,7 +61,6 @@ nav a{
 
 .flexbox__container .flexbox__items:nth-child(1){
     background-color: #e28525 ;
-    border-radius: .8rem 0 0 .8rem;
 }
 
 .flexbox__container .flexbox__items:nth-child(2){
@@ -69,7 +69,6 @@ nav a{
 
 .flexbox__container .flexbox__items:nth-child(3){
     background-color: #00403f;
-    border-radius: 0 .8rem .8rem 0;
 }
 
 .flexbox__container .flexbox__items .flexbox__items__content{
@@ -126,7 +125,7 @@ nav a{
     }
     .flexbox__container .flexbox__items{
         height: auto;
-        width: 98%;
+        width: 92%;
         margin: auto;
     }
 
